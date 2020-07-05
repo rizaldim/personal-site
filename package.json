@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "pnpx gulp && concurrently \"pnpx gulp watch\" \"pnpx eleventy --serve\"",
-    "production": "NODE_ENV=production pnpx gulp && NODE_ENV=production pnpx eleventy"
+    "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
   },
   "repository": {
     "type": "git",
