@@ -1,4 +1,13 @@
+@import 'reset';
+
 :root {
 	font-family: 'Cantarell', sans-serif;
 	font-size: calc(1em + 0.5vw);
+}
+
+main {
+	width: 100%;
+	max-width: 60ch;
+
+	padding: 1em;
 }

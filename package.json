@@ -5,8 +5,8 @@
   "main": ".eleventy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pnpx eleventy --serve",
-    "build": "rm -rfv dist && pnpx eleventy"
+    "start": "pnpx gulp && concurrently \"pnpx gulp watch\" \"pnpx eleventy --serve\"",
+    "production": "NODE_ENV=production pnpx gulp && NODE_ENV=production pnpx eleventy"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,11 @@
   },
   "homepage": "https://github.com/rizaldim/personal-site#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "concurrently": "^5.2.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "sass": "^1.26.9"
   }
 }
