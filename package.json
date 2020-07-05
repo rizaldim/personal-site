@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
+    "start": "rm -rfv dist/* && npx gulp && concurrently \"npx gulp watch\" \"npx eleventy --serve\"",
     "production": "NODE_ENV=production npx gulp && NODE_ENV=production npx eleventy"
   },
   "repository": {

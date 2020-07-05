@@ -8,8 +8,6 @@ sassProcessor.compiler = require('sass');
 // Flags whether we compress the output etc
 const isProduction = process.env.NODE_ENV === 'production';
 
-console.log(isProduction? "prod": "no-prod");
-
 // The main Sass method grabs all root Sass files,
 // processes them, then sends them to the output calculator
 const sass = () => {

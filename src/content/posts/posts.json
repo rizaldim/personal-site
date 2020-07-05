@@ -1,0 +1,5 @@
+{
+	"layout": "layouts/post.html",
+	"permalink": "/post/{{ title | slug }}/index.html",
+	"draft": false
+}

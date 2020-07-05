@@ -1,0 +1,12 @@
+{% extends "layouts/base.html" %}
+
+{% block content %}
+
+	{% if draft %}
+		<p>This post is still a draft</p>
+	{% else %}
+		{{ content | safe }}
+	{% endif %}
+
+{% endblock %}
+

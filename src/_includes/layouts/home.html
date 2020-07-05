@@ -1,6 +1,24 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
+
 	{{ content | safe }}
+
+	{% if collection.posts %}
+
+		<ul>
+
+			{% for post in collection.posts %}
+				<li>{{ post.title }}</li>
+			{% endfor %}
+
+		</ul>
+
+	{% else %}
+
+		<p>There are no posts</p>
+
+	{% endif %}
+
 {% endblock %}
 
