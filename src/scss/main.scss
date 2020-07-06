@@ -1,6 +1,8 @@
 @import 'reset';
 
 :root {
+	--stack-margin: 1.5em;
+
 	font-family: 'Cantarell', sans-serif;
 	font-size: calc(1em + 0.5vw);
 }
@@ -12,7 +14,11 @@ main {
 	padding: 1em;
 }
 
+pre[class*="language-"] {
+	margin-top: var(--stack-margin);
+}
+
 .stack > * + * {
-	margin-top: 1em;
+	margin-top: var(--stack-margin);
 }
 

@@ -2,11 +2,12 @@
 
 {% block content %}
 
-	{% if draft %}
-		<p>This post is still a draft</p>
-	{% else %}
-		{{ content | safe }}
-	{% endif %}
+	<header>
+		<h1>{{ title }}</h1>
+		<p><date>{{ date | dateFilter }}</date></p>
+	</header>
+
+	{{ content | safe }}
 
 {% endblock %}
 

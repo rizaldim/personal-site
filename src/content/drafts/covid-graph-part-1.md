@@ -1,6 +1,5 @@
 ---
 title: "Aplikasi grafik harian Covid-19 - Bagian I"
-draft: true
 ---
 
 Sudah lama pengen bikin aplikasi web yang ada grafiknya. Beberapa bulan yang
