@@ -1,4 +1,22 @@
 {
 	"name": "Rizaldi M's personal site",
-	"url": "https://rizaldim.com"
+	"url": "https://rizaldim.com",
+	"navigations": [
+		{
+			"text": "Home",
+			"path": "/"
+		},
+		{
+			"text": "Recommendations",
+			"path": "/recommendations/"
+		},
+		{
+			"text": "Tutorial Series",
+			"path": "/tutorial-series/"
+		},
+		{
+			"text": "Labs",
+			"path": "/labs/"
+		}
+	]
 }

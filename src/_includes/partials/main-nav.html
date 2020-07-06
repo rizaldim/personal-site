@@ -1,0 +1,8 @@
+<nav class="main-nav">
+	<ul>
+		{% for item in site.navigations %}
+		<li><a href="{{ item.path }}">{{ item.text }}</a></li>
+		{% endfor %}
+	</ul>
+</nav>
+	

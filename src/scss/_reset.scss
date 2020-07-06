@@ -6,8 +6,8 @@
 }
 
 /* Remove default padding */
-ul[class],
-ol[class] {
+ul,
+ol {
 	padding: 0;
 }
 
@@ -18,8 +18,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -38,13 +38,13 @@ body {
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
+ul,
+ol {
 	list-style: none;
 }
 
 /* A elements that don't have a class get default styles */
-a:not([class]) {
+a {
 	text-decoration-skip-ink: auto;
 }
 
@@ -52,11 +52,6 @@ a:not([class]) {
 img {
 	max-width: 100%;
 	display: block;
-}
-
-/* Natural flow and rhythm in articles by default */
-article > * + * {
-	margin-top: 1em;
 }
 
 /* Inherit fonts for inputs and buttons */

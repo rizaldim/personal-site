@@ -7,15 +7,29 @@
 	font-size: calc(1em + 0.5vw);
 }
 
+body {
+	padding: 1em;
+}
+
 main {
 	width: 100%;
 	max-width: 60ch;
-
-	padding: 1em;
 }
 
 pre[class*="language-"] {
 	margin-top: var(--stack-margin);
+}
+
+nav.main-nav {
+	margin-bottom: 1em;
+
+	li {
+		display: inline-block;
+	}
+
+	ul > li + li {
+		margin-inline-start: .5em;
+	}
 }
 
 .stack > * + * {
