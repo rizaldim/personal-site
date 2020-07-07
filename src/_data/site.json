@@ -7,16 +7,8 @@
 			"path": "/"
 		},
 		{
-			"text": "Recommendations",
-			"path": "/recommendations/"
-		},
-		{
-			"text": "Tutorial Series",
-			"path": "/tutorial-series/"
-		},
-		{
-			"text": "Labs",
-			"path": "/labs/"
+			"text": "Micro Blog",
+			"path": "/microblog/"
 		}
 	]
 }
