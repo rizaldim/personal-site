@@ -1,6 +1,7 @@
 {
 	"name": "Rizaldi M's personal site",
 	"url": "https://rizaldim.com",
+	"favicon": "/favicon.ico",
 	"navigations": [
 		{
 			"text": "Home",
