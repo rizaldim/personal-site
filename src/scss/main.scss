@@ -36,3 +36,11 @@ nav.main-nav {
 	margin-top: var(--stack-margin);
 }
 
+.posts-section {
+	date {
+		font-size: calc(1rem / 1.2);
+	}
+	li {
+		margin-top: .5em;
+	}
+}
