@@ -1,23 +1,23 @@
-@import 'reset';
+@import 'settings';
 
-:root {
-	--stack-margin: 1.5em;
+@import 'generic.box-sizing';
+@import 'generic.reset';
+@import 'generic.root';
 
-	font-family: 'Cantarell', sans-serif;
-	font-size: calc(1em + 0.25vw);
-}
-
-body {
-	padding: 1em;
-}
+@import 'element.body';
+@import 'element.header';
 
 main {
 	width: 100%;
 	max-width: 60ch;
 }
 
+p {
+	font-size: var(--s0);
+}
+
 pre[class*="language-"] {
-	margin-top: var(--stack-margin);
+	margin-top: var(--mg-stack);
 }
 
 nav.main-nav {
@@ -33,14 +33,27 @@ nav.main-nav {
 }
 
 .stack > * + * {
-	margin-top: var(--stack-margin);
+	margin-top: var(--mg-stack);
 }
 
 .posts-section {
 	date {
-		font-size: calc(1rem / 1.2);
+		font-size: var(--s-1);
 	}
 	li {
 		margin-top: .5em;
 	}
+}
+
+p.tags {
+	display: flex;
+	font-size: var(--s0);
+
+	> * + * {
+		margin-left: .5em;
+	}
+}
+
+p date {
+	font-size: var(--s0);
 }

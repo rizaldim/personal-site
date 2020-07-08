@@ -1,7 +1,7 @@
 ---
 title: Stack class in CSS
 date: 2020-07-06
-tags: ['css']
+tags: ['css', 'frontend']
 ---
 
 I first learned this in [Every Layout][every-layout] book, a realy great book
