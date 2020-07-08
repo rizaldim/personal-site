@@ -1,13 +1,16 @@
 ---
-title: Stack class di CSS
+title: Stack class in CSS
 date: 2020-07-06
 tags: ['css']
 ---
 
-Di CSS kita bisa bikin satu class khusus untuk stack atau tumpukan. Contoh use
-case nya itu saat kita nulis satu artikel dan kita pengennya setiap paragraf di
-artikel tersebut ada margin atasnya. Misal ada artikel dengan judul, 5 paragraf,
-dan 1 image. Kita bisa bikin html-nya seperti ini:
+I first learned this in [Every Layout][every-layout] book, a realy great book
+written by [Andy Bell][andy-bell] and [Heydon Pickering][heydon]. In CSS we can
+make a class for stack. An example use case is when we write an article and we
+want top margin for every paragraph.
+
+Let's say there's an article with a title, 5 paragraphs, and 1 image. We can
+write it this way in HTML:
 
 ``` html
 <article>
@@ -19,8 +22,8 @@ dan 1 image. Kita bisa bikin html-nya seperti ini:
 </article>
 ```
 
-Jika kita ingin semua html element di dalam article memiliki margin atas, kecuali
-element h2, kita bisa lakukan dengan memakai css seperti ini:
+If we want every children elements inside the article to have top margin except
+the header (h2), then we can use this css:
 
 ``` css
 article > * + * {
@@ -28,8 +31,7 @@ article > * + * {
 }
 ```
 
-Karena seringnya kita menemui keadaan seperti ini saat memberi style ke halaman
-html ada baiknya kita buat satu class untuk itu.
+Because this use case is quite common, we can write a class for stack like this.
 
 ``` css
 .stack > * + * {
@@ -37,3 +39,6 @@ html ada baiknya kita buat satu class untuk itu.
 }
 ```
 
+[every-layout]: https://every-layout.dev/
+[andy-bell]: https://hankchizljaw.com/
+[heydon]: https://heydonworks.com/
