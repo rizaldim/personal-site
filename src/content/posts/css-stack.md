@@ -9,7 +9,7 @@ written by [Andy Bell][andy-bell] and [Heydon Pickering][heydon]. In CSS we can
 make a class for stack. An example use case is when we write an article and we
 want top margin for every paragraph.
 
-Let's say there's an article with a title, 5 paragraphs, and 1 image. We can
+Let's say there's an article with a title, 3 paragraphs, and 1 image. We can
 write it this way in HTML:
 
 ``` html
