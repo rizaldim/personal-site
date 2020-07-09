@@ -4,36 +4,43 @@
 @import 'generic.reset';
 @import 'generic.root';
 
-@import 'element.body';
 @import 'element.header';
+
+body {
+	padding: 1em;
+	line-height: 1.4;
+}
 
 main {
 	width: 100%;
 	max-width: 60ch;
 }
 
-p {
-	font-size: var(--s0);
-}
+h1 { font-size: var(--s4); }
 
-pre[class*="language-"] {
-	margin-top: var(--mg-stack);
-}
+h2 { font-size: var(--s3); }
+
+h3 { font-size: var(--s2); }
+
+h4 { font-size: var(--s1); }
+
+p { font-size: var(--s0); }
 
 nav.main-nav {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 
 	li {
 		display: inline-block;
 	}
 
-	ul > li + li {
+	li + li {
 		margin-inline-start: .5em;
 	}
+
 }
 
 .stack > * + * {
-	margin-top: var(--mg-stack);
+	margin-top: 1.5em;
 }
 
 .posts-section {
