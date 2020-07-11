@@ -1,5 +1,5 @@
 ---
-title: Create tree clone using javascript
+title: Tree-like command using javascript
 date: 2020-07-11
 tags: ['js', 'command-line']
 ---
