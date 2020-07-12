@@ -39,6 +39,9 @@ Because this use case is quite common, we can write a class for stack like this.
 }
 ```
 
+[Every Layout book][every-layout] explains it in even more details actually. You
+should check it out.
+
 [every-layout]: https://every-layout.dev/
 [andy-bell]: https://hankchizljaw.com/
 [heydon]: https://heydonworks.com/
