@@ -7,7 +7,7 @@
 @import 'element.header';
 
 body {
-	padding: 1em calc(1em + 1vw);
+	padding: 2em calc(1em + 1vw) 4em;
 	line-height: 1.4;
 }
 
@@ -31,6 +31,24 @@ h1, h2, h3, h4 {
 }
 
 p { font-size: var(--s0); }
+
+strong {
+	font-weight: bold;
+}
+
+ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+}
+
+ul {
+	list-style: disc inside none;
+}
+
+.stack pre {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
 
 nav.main-nav {
 	margin-bottom: 1.5em;
@@ -74,3 +92,13 @@ p.tags {
 p date {
 	font-size: var(--s0);
 }
+
+p code,
+li code {
+	padding: .2em .4em;
+	border-radius: 6px;
+
+	background-color: rgba(27, 31, 35, .05);
+	font-size: 85%;
+}
+
