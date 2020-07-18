@@ -166,7 +166,8 @@ also seems to be using chokidar.
 I find that chokidar is quite reliable to detect changes inside a directory.
 One potential use case for chokidar that I can think of is using it in a custom
 build tool/process that we create based on our own logic. Anytime we detect
-change, redo build step related to that specific change.
+change, redo build step related to that specific change only, not the whole
+process.
 
 [chokidar]: https://github.com/paulmillr/chokidar
 [rust]: https://www.rust-lang.org/
