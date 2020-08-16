@@ -19,13 +19,13 @@ First create `index.html` file.
 <!doctype html>
 <html>
 <head>
-	<title>Sample</title>
-	<link rel="stylesheet" href="style.css">
+  <title>Sample</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<button>Start</button>
-	<div id="container"></div>
-	<script src="index.js"></script>
+  <button>Start</button>
+  <div id="container"></div>
+  <script src="index.js"></script>
 </body>
 </html>
 ```
@@ -34,7 +34,7 @@ Give it a little bit of css with `style.css` file.
 
 ```css
 body {
-    padding: 2em;
+  padding: 2em;
 }
 
 #container {
@@ -57,49 +57,49 @@ Now for the javascript inside `index.js` file:
 
 ```javascript
 ;(function () {
-    var button = document.querySelector('button');
-    var container = document.querySelector('#container');
+  var button = document.querySelector('button');
+  var container = document.querySelector('#container');
 
-    var isIdle = true;
-    var state = 0; // 1 -> wider, -1 -> narrower
+  var isIdle = true;
+  var state = 0; // 1 -> wider, -1 -> narrower
 
-    function sleep (ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
+  function sleep (ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
 
-    async function start (view, minWidth, maxWidth) {
-        var change = 10; // width change in pixel per iteration
-        var ms = 50; // duration to wait per iteration
-        var width = Number(window.getComputedStyle(view).width.replace('px', ''));
-        
-        while (!isIdle) {
-            if (state == 1) {
-                width = width + change;
-                if (width >= maxWidth) {
-                    width = maxWidth;
-                    state = 0;
-                }
-            } else {
-                width = width - change;
-                if (width <= minWidth) {
-                    width = minWidth;
-                    state = 1;
-                }
-            }
-            view.style.width = width + 'px'; 
-            await sleep(ms);
+  async function start (view, minWidth, maxWidth) {
+    var change = 10; // width change in pixel per iteration
+    var ms = 50; // duration to wait per iteration
+    var width = Number(window.getComputedStyle(view).width.replace('px', ''));
+    
+    while (!isIdle) {
+      if (state == 1) {
+        width = width + change;
+        if (width >= maxWidth) {
+          width = maxWidth;
+          state = 0;
         }
-    }
-
-    button.addEventListener('click', function (event) {
-        isIdle = !isIdle;
-        if (isIdle) {
-            button.innerText = 'Start';
-        } else {
-            button.innerText = 'Pause';
-            start(container, 320, 960);
+      } else {
+        width = width - change;
+        if (width <= minWidth) {
+          width = minWidth;
+          state = 1;
         }
-    });
+      }
+      view.style.width = width + 'px'; 
+      await sleep(ms);
+    }
+  }
+
+  button.addEventListener('click', function (event) {
+    isIdle = !isIdle;
+    if (isIdle) {
+      button.innerText = 'Start';
+    } else {
+      button.innerText = 'Pause';
+      start(container, 320, 960);
+    }
+  });
 })();
 ```
 
@@ -113,7 +113,7 @@ var isIdle = true;
 var state = 0; // 1 -> wider, -1 -> narrower
 
 function sleep (ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 ```
 
@@ -121,13 +121,13 @@ At the end of the program, we listen to `click` event for button.
 
 ```javascript
 button.addEventListener('click', function (event) {
-    isIdle = !isIdle;
-    if (isIdle) {
-        button.innerText = 'Start';
-    } else {
-        button.innerText = 'Pause';
-        start(container, 320, 960);
-    }
+  isIdle = !isIdle;
+  if (isIdle) {
+    button.innerText = 'Start';
+  } else {
+    button.innerText = 'Pause';
+    start(container, 320, 960);
+  }
 });
 ```
 
@@ -137,27 +137,27 @@ width by calling `start` function. For the `start` function itself:
 
 ```javascript
 async function start (view, minWidth, maxWidth) {
-    var change = 10; // width change in pixel per iteration
-    var ms = 50; // duration to wait per iteration
-    var width = Number(window.getComputedStyle(view).width.replace('px', ''));
-    
-    while (!isIdle) {
-        if (state == 1) {
-            width = width + change;
-            if (width >= maxWidth) {
-                width = maxWidth;
-                state = 0;
-            }
-        } else {
-            width = width - change;
-            if (width <= minWidth) {
-                width = minWidth;
-                state = 1;
-            }
-        }
-        view.style.width = width + 'px'; 
-        await sleep(ms);
+  var change = 10; // width change in pixel per iteration
+  var ms = 50; // duration to wait per iteration
+  var width = Number(window.getComputedStyle(view).width.replace('px', ''));
+  
+  while (!isIdle) {
+    if (state == 1) {
+      width = width + change;
+      if (width >= maxWidth) {
+        width = maxWidth;
+        state = 0;
+      }
+    } else {
+      width = width - change;
+      if (width <= minWidth) {
+        width = minWidth;
+        state = 1;
+      }
     }
+    view.style.width = width + 'px'; 
+    await sleep(ms);
+  }
 }
 ```
 
