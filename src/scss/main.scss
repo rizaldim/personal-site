@@ -13,12 +13,10 @@ body {
 
 main {
 	width: 100%;
-	max-width: 80ch;
+	max-width: 60ch;
 }
 
-h1 {
-	font-size: var(--s4);
-}
+h1 { font-size: var(--s4); }
 
 h2 { font-size: var(--s3); }
 
