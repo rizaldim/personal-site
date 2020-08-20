@@ -1,5 +1,5 @@
 ---
-title: Changing-width Container
+title: Changing-width container
 date: 2020-08-16
 tags: ['js', 'css']
 ---
