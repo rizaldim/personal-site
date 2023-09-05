@@ -9,6 +9,3 @@ Hi, welcome to my site! My name is Rizaldi Martaputra and I am a software engine
 For the last few years I have been working in SRE/DevOps role and most likely will stay that way for
 the foreseeable future. 
 
-## My study notes
-
-- [Dive into Ansible](/study/dive-into-ansible/) by [James Spurin](https://twitter.com/jamesspurin).
