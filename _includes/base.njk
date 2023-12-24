@@ -13,6 +13,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
 		rel="stylesheet">
 
+	<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+
 	<style>
 {% include "reset.css" %}
 {% include "style.css" %}
@@ -21,13 +23,16 @@
 </head>
 
 <body>
-	<header>
 	{% block header %}
+	<header>
 		<h1>rzldm.xyz</h1>
-	{% endblock %}
 	</header>
+	{% endblock %}
 
+	<main>
 	{{ content | safe }}
+	</main>
+
 </body>
 
 </html>

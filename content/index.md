@@ -3,8 +3,14 @@ layout: layout.njk
 title: home
 ---
 
-## Introduction
+## Posts
 
-Hi, welcome to my site! My name is Rizaldi and I am a software engineer living in Indonesia.
-For the last few years I have been working in SRE/DevOps role.
-
+<ul>
+{%- for post in collections.posts | reverse -%}
+    <li>
+        <a href="{{ post.url }}">
+            {{ post.data.title }}
+        </a>
+    </li>
+{%- endfor -%}
+</ul>

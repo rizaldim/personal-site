@@ -1,4 +1,4 @@
 {
-	"date": "git Last Modified",
-	"layout": "post.njk"
+	"layout": "post.njk",
+	"tags": [ "posts" ]
 }
