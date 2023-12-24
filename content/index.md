@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: Home
+title: home
 ---
 
 ## Introduction
